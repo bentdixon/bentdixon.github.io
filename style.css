@@ -42,7 +42,7 @@ main { padding-bottom: 3rem; }
 /* Intro: profile on the left, bio on the right */
 .intro { display: grid; grid-template-columns: 14.5rem 1fr; gap: 3.5rem; align-items: start; }
 .profile { text-align: center; }
-.photo { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 14px; }
+.photo { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; object-position: 50% 20%; border-radius: 14px; }
 .photo.placeholder { display: flex; align-items: center; justify-content: center; background: var(--card); color: var(--muted); font-size: 3rem; letter-spacing: 0.05em; }
 .profile-role { margin: 1.4rem 0 0.4rem; font-weight: 400; line-height: 1.45; }
 .profile-place { margin: 0; font-weight: 400; }
