@@ -1,0 +1,115 @@
+/* All colours and fonts live here. Change these to restyle the site. */
+:root {
+  --bg: #f7f6f2;
+  --card: #ffffff;
+  --text: #1c1c1c;
+  --muted: #666660;
+  --accent: #1f4e79;
+  --accent-soft: #e6eef6;
+  --border: #e2e0da;
+  --font-body: "Source Serif 4", Georgia, serif;
+  --font-ui: "Inter", system-ui, sans-serif;
+  --radius: 8px;
+}
+
+* { box-sizing: border-box; }
+html { font-size: 17px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.55;
+}
+a { color: var(--accent); text-underline-offset: 0.15em; }
+
+.wrap { max-width: 52rem; margin: 0 auto; padding: 0 1.25rem; }
+
+/* Header */
+.site-header { background: var(--card); border-bottom: 1px solid var(--border); }
+.site-header > .wrap { padding-top: 2.5rem; padding-bottom: 1rem; }
+h1 { font-size: 2rem; font-weight: 600; line-height: 1.2; margin: 0; }
+.role { color: var(--muted); margin: 0.35rem 0 0.75rem; }
+.links { margin: 0; font-family: var(--font-ui); font-size: 0.85rem; display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; }
+
+/* Tabs: a static bar that stays at the top while you scroll */
+.tabs { position: sticky; top: 0; z-index: 10; background: var(--card); border-top: 1px solid var(--border); }
+.tabs .wrap { display: flex; gap: 0.25rem; overflow-x: auto; scrollbar-width: none; }
+.tabs a {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.8rem 0.75rem;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+}
+.tabs a:hover { color: var(--text); }
+.tabs a[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* Sections */
+main { padding-top: 2rem; padding-bottom: 2rem; }
+.js .panel[hidden] { display: none; }
+.panel { margin-bottom: 2.5rem; }
+h2 { font-family: var(--font-ui); font-size: 1.2rem; font-weight: 600; margin: 0 0 1rem; }
+h3 { font-size: 1.05rem; font-weight: 600; line-height: 1.35; margin: 0; }
+h3.group { font-family: var(--font-ui); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 1.75rem 0 0.6rem; }
+
+/* Cards: flat, bordered, no shadows or motion */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  margin: 0 0 0.9rem;
+}
+.card p { margin: 0.4rem 0 0; }
+.card p:first-child { margin-top: 0; }
+.card ul { margin: 0.6rem 0 0; padding-left: 1.2rem; }
+.card li + li { margin-top: 0.3rem; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 0.9rem; }
+.grid .card { margin: 0; display: flex; flex-direction: column; }
+
+.row { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.date { flex-shrink: 0; font-family: var(--font-ui); font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.meta { color: var(--muted); font-size: 0.92rem; }
+
+.badge {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 4px;
+  padding: 0.15rem 0.45rem;
+  margin-bottom: 0.45rem;
+}
+
+.stat .num { display: block; font-family: var(--font-ui); font-size: 1.6rem; font-weight: 600; color: var(--accent); line-height: 1.2; }
+.stat span:last-child { color: var(--muted); font-size: 0.9rem; }
+
+.tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.7rem !important; }
+.tags span { font-family: var(--font-ui); font-size: 0.72rem; color: var(--muted); border: 1px solid var(--border); border-radius: 999px; padding: 0.1rem 0.55rem; }
+.project .more { margin-top: auto; padding-top: 0.8rem; font-family: var(--font-ui); font-size: 0.85rem; }
+
+ul.list { list-style: none; padding: 0.4rem 1.25rem; }
+ul.list li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 0.55rem 0; margin: 0; border-bottom: 1px solid var(--border); }
+ul.list li:last-child { border-bottom: 0; }
+
+footer { color: var(--muted); font-family: var(--font-ui); font-size: 0.8rem; padding-bottom: 2.5rem; }
+
+@media (max-width: 36rem) {
+  h1 { font-size: 1.6rem; }
+  .row, ul.list li { flex-direction: column; gap: 0.1rem; }
+}
+
+@media print {
+  .tabs, #picker { display: none !important; }
+  .js .panel[hidden] { display: block; }
+  .card { border: 0; padding: 0; }
+}
