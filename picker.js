@@ -10,7 +10,7 @@
     'Dark':     { bg: '#16171a', card: '#24262b', text: '#e6e6e3', muted: '#9a9ca3', accent: '#c9a7d6', soft: '#24262b', border: '#33363d' }
   };
   var fonts = {
-    'Source Serif':      { body: '"Source Serif 4", Georgia, serif', ui: '"Source Serif 4", Georgia, serif', q: 'Source+Serif+4:ital,opsz,wght@0,8..60,300..600;1,8..60,400' },
+    'Source Serif Pro':  { body: '"Source Serif Pro", serif', ui: '"Source Serif Pro", serif', q: 'Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,400' },
     'EB Garamond':       { body: '"EB Garamond", Georgia, serif', ui: '"EB Garamond", Georgia, serif', q: 'EB+Garamond:ital,wght@0,400..600;1,400' },
     'Newsreader':        { body: '"Newsreader", Georgia, serif', ui: '"Newsreader", Georgia, serif', q: 'Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,400' },
     'Crimson Pro':       { body: '"Crimson Pro", Georgia, serif', ui: '"Crimson Pro", Georgia, serif', q: 'Crimson+Pro:ital,wght@0,300..600;1,400' },
@@ -21,7 +21,7 @@
 
   var root = document.documentElement.style;
   var link = document.getElementById('font-link');
-  var state = { palette: 'Plum', font: 'Source Serif' };
+  var state = { palette: 'Plum', font: 'Source Serif Pro' };
 
   function apply() {
     var p = palettes[state.palette], f = fonts[state.font];
