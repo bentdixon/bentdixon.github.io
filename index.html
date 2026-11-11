@@ -4,199 +4,274 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Benjamin Dixon</title>
-  <meta name="description" content="Benjamin Dixon: computational psychiatry, language as a biomarker of psychosis risk, and prediction in language and the brain.">
+  <meta name="description" content="Benjamin Dixon: MSc Cognitive Science, University of Edinburgh. Computational analyses of speech and neural data as biomarkers of neuropsychiatric disorders.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link id="font-link" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600&display=swap">
+  <link id="font-link" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..600;1,8..60,400&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap">
-    <h1>Benjamin Dixon</h1>
-    <p class="role">MSc Cognitive Science, University of Edinburgh · Research Scientist, Language as a Biomarker Lab, Emory University</p>
-    <p class="links">
-      <a href="mailto:btdixon@emory.edu">btdixon@emory.edu</a>
-      <a href="https://github.com/bentdixon">GitHub</a>
-      <a href="https://www.linkedin.com/in/benjamin-dixon">LinkedIn</a>
-      <a href="cv.pdf">CV (PDF)</a>
-    </p>
-  </div>
+<!-- Icons, used below with <use href="#i-..."> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.070 3.633 17.700 3.633 17.700c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.070 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.930 0-1.310.465-2.380 1.235-3.220-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.300 1.230.96-.267 1.980-.399 3-.405 1.020.006 2.040.138 3 .405 2.280-1.552 3.285-1.230 3.285-1.230.645 1.653.24 2.873.12 3.176.765.84 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.42.36.81 1.096.81 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm.4 2L12 12.6 21.6 6H2.4zM22 7.9l-10 6.9L2 7.9V18h20V7.9z"/></symbol>
+  <symbol id="i-cv" viewBox="0 0 24 24"><path fill="currentColor" d="M5 0h10l6 6v16a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm9 1.5V7h5.5L14 1.5zM7 11v1.8h10V11H7zm0 4v1.8h10V15H7zm0 4v1.8h6V19H7z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0a8 8 0 0 0-8 8c0 6 8 16 8 16s8-10 8-16a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></symbol>
+</svg>
+
+<div class="topbar"></div>
+
+<header class="wrap masthead">
+  <a class="name" href="#home">Benjamin Dixon</a>
   <nav class="tabs" aria-label="Sections">
-    <div class="wrap" role="tablist">
-      <a href="#about" role="tab">About</a>
-      <a href="#publications" role="tab">Publications</a>
-      <a href="#research" role="tab">Research</a>
-      <a href="#projects" role="tab">Projects</a>
-      <a href="#education" role="tab">Education</a>
-      <a href="#service" role="tab">Teaching &amp; service</a>
-    </div>
+    <a href="#home">Home</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="cv.pdf" class="external">CV</a>
   </nav>
 </header>
 
 <main class="wrap">
 
-<!-- ABOUT -->
-<section id="about" class="panel" role="tabpanel">
-  <h2>About</h2>
-  <div class="card">
-    <p>I'm Benjamin, an MSc student in Cognitive Science at Edinburgh University (School of Informatics) and Research Scientist at the Language as a Biomarker Lab under Dr. Wolff. My current research focuses on developing computational analyses of speech and pairing those analyses with neural data to discover novel biomarkers of neuropsychiatric and neurodegenerative disorders. My research also involves machine learning and representation alignment. My interests include computational psychiatry, neural time series data, and information-theoretic approaches to language. Outside of academia, I want to help build technologies that are useful for disabled people.</p>
-  </div>
-  <div class="grid">
-    <div class="card stat"><span class="num">15,000+</span><span>interview transcripts in the AMP SCZ language release I led</span></div>
-    <div class="card stat"><span class="num">9</span><span>papers, manuscripts and posters</span></div>
-    <div class="card stat"><span class="num">1st</span><span>place, UN SDG Challenge, AdaHack 2026</span></div>
-  </div>
-</section>
+<!-- ========== HOME ========== -->
+<section id="home" class="panel">
+  <div class="intro">
+    <aside class="profile">
+      <!-- To add a photo: put photo.jpg in this folder and replace the div below with
+           <img class="photo" src="photo.jpg" alt="Benjamin Dixon"> -->
+      <div class="photo placeholder" aria-hidden="true">BD</div>
+      <p class="profile-role">MSc Cognitive Science<br>@ University of Edinburgh</p>
+      <p class="profile-place"><svg class="ic"><use href="#i-pin"/></svg> Edinburgh, UK</p>
+    </aside>
 
-<!-- PUBLICATIONS -->
-<section id="publications" class="panel" role="tabpanel">
+    <div class="bio">
+      <p>I'm Benjamin, an MSc student in Cognitive Science at Edinburgh University (School of Informatics) and Research Scientist at the Language as a Biomarker Lab under Dr. Wolff.</p>
+      <p>My current research focuses on developing computational analyses of speech and pairing those analyses with neural data to discover novel biomarkers of neuropsychiatric and neurodegenerative disorders. My research also involves machine learning and representation alignment. My interests include computational psychiatry, neural time series data, and information-theoretic approaches to language.</p>
+      <p>Outside of academia, I want to help build technologies that are useful for disabled people.</p>
+
+      <ul class="icon-links">
+        <li><a href="https://github.com/bentdixon"><svg><use href="#i-github"/></svg><span>GitHub</span></a></li>
+        <li><a href="https://www.linkedin.com/in/benjamin-dixon"><svg><use href="#i-linkedin"/></svg><span>LinkedIn</span></a></li>
+        <li><a href="mailto:btdixon@emory.edu"><svg><use href="#i-mail"/></svg><span>Email</span></a></li>
+        <li><a href="cv.pdf"><svg><use href="#i-cv"/></svg><span>CV</span></a></li>
+      </ul>
+    </div>
+  </div>
+
   <h2>Publications</h2>
 
-  <article class="card">
-    <span class="badge">Conference paper</span>
+  <article class="entry">
     <h3>DIALOG-DeID: Role- and Privacy-Aware Transcription for Clinical Interviews Beyond WER</h3>
-    <p class="meta">Oliveira, G. C., <b>Dixon, B. T.</b>, et al. · <i>Proceedings of Interspeech 2026</i>, Sydney</p>
+    <p class="authors">G. C. Oliveira, <b>B. T. Dixon</b>, et al.</p>
+    <p class="venue">Interspeech, 2026</p>
   </article>
 
-  <article class="card">
-    <span class="badge">In preparation</span>
+  <article class="entry">
     <h3>Measuring Cohesion with Self-Attention: Local Focus and Weaker Long-Range Links in Clinical High Risk for Psychosis</h3>
-    <p class="meta"><b>Dixon, B. T.</b>, et al. · Invited submission, <i>Schizophrenia Bulletin</i> special issue</p>
+    <p class="authors"><b>B. T. Dixon</b>, et al.</p>
+    <p class="venue">Schizophrenia Bulletin, invited submission (in preparation)</p>
   </article>
 
-  <article class="card">
-    <span class="badge">In preparation</span>
+  <article class="entry">
     <h3>Semantic Elements of Interview and Diary Speech Characterize Positive and Negative Symptoms in Clinical High Risk for Psychosis Across Languages</h3>
-    <p class="meta">Bilgrami, Z. R., <b>Dixon, B. T.</b>, et al. · Invited submission, <i>Schizophrenia Bulletin</i> special issue</p>
+    <p class="authors">Z. R. Bilgrami, <b>B. T. Dixon</b>, et al.</p>
+    <p class="venue">Schizophrenia Bulletin, invited submission (in preparation)</p>
   </article>
 
-  <h3 class="group">Posters and talks</h3>
-  <ul class="list card">
-    <li><span><b>Large Language Models Can Predict Psychosis Risk from Disruptions in the Flow of Ideas.</b> Bilgrami, Z. R., <b>Dixon, B. T.</b>, et al. ACNP, San Diego.</span><span class="date">2027</span></li>
-    <li><span><b>A Scalable and Extensible Infrastructure for AI-Driven Processing of Clinical Interviews.</b> Tamayo, Z., <b>Dixon, B. T.</b>, et al. ACNP, San Diego.</span><span class="date">2027</span></li>
-    <li><span><b>Altered Pronoun Use in Clinical High Risk for Psychosis Across Languages.</b> <b>Dixon, B. T.</b>, et al. SIRS, Florence.</span><span class="date">2026</span></li>
-    <li><span><b>Uncovering Universal and Culture-Specific Themes in Psychosis Risk.</b> Bilgrami, A., <b>Dixon, B. T.</b>, et al. SIRS, Florence.</span><span class="date">2026</span></li>
-    <li><span><b>Reduced Future Orientation and Temporal Switching in Spontaneous Language at Clinical High Risk for Psychosis.</b> Zhang, Y., <b>Dixon, B. T.</b>, et al. SIRS, Florence.</span><span class="date">2026</span></li>
-    <li><span><b>Automated Assessment of Language Concreteness Using Large Language Models.</b> Zarina, B., <b>Dixon, B. T.</b>, Wolff, P. SIRS, Chicago.</span><span class="date">2025</span></li>
-    <li><span><b>Developing Autistic Student Leadership</b> (talk). <b>Dixon, B. T.</b>, Sabrina, S., Segall, M. College Autism Summit, Columbus.</span><span class="date">2024</span></li>
+  <h2>Posters &amp; Talks</h2>
+  <ul class="plain">
+    <li><b>Large Language Models Can Predict Psychosis Risk from Disruptions in the Flow of Ideas.</b> Z. R. Bilgrami, <b>B. T. Dixon</b>, et al. <span class="venue-inline">ACNP, 2027</span></li>
+    <li><b>A Scalable and Extensible Infrastructure for AI-Driven Processing of Clinical Interviews.</b> Z. Tamayo, <b>B. T. Dixon</b>, et al. <span class="venue-inline">ACNP, 2027</span></li>
+    <li><b>Altered Pronoun Use in Clinical High Risk for Psychosis Across Languages.</b> <b>B. T. Dixon</b>, et al. <span class="venue-inline">SIRS, 2026</span></li>
+    <li><b>Uncovering Universal and Culture-Specific Themes in Psychosis Risk.</b> A. Bilgrami, <b>B. T. Dixon</b>, et al. <span class="venue-inline">SIRS, 2026</span></li>
+    <li><b>Reduced Future Orientation and Temporal Switching in Spontaneous Language at Clinical High Risk for Psychosis.</b> Y. Zhang, <b>B. T. Dixon</b>, et al. <span class="venue-inline">SIRS, 2026</span></li>
+    <li><b>Automated Assessment of Language Concreteness Using Large Language Models.</b> B. Zarina, <b>B. T. Dixon</b>, P. Wolff. <span class="venue-inline">SIRS, 2025</span></li>
+    <li><b>Developing Autistic Student Leadership</b> (talk). <b>B. T. Dixon</b>, S. Sabrina, M. Segall. <span class="venue-inline">College Autism Summit, 2024</span></li>
   </ul>
 </section>
 
-<!-- RESEARCH -->
-<section id="research" class="panel" role="tabpanel">
-  <h2>Research</h2>
+<!-- ========== RESEARCH ========== -->
+<section id="research" class="panel">
+  <h2 class="first">Experience</h2>
 
-  <article class="card">
-    <div class="row"><h3>Language as a Biomarker Lab, Emory University</h3><span class="date">2024–present</span></div>
-    <p class="meta">Research Scientist (2026–) · Research Software Engineer (2025–26) · Research Assistant (2024–25)</p>
-    <ul>
-      <li>Led the speech and language feature release for the AMP SCZ consortium (NIMH Data Archive Release 4): 15,000+ interview transcripts across languages.</li>
-      <li>Model clinical interviews as time series of sentence embeddings and word surprisal to test whether the long-range structure of speech differs in early psychosis.</li>
-      <li>Built speech pipelines (speaker separation, transcription) on a GPU cluster that processed 1,500 hours of interview audio.</li>
+  <details class="entry">
+    <summary>
+      <svg class="chev"><use href="#i-chev"/></svg>
+      <h3>Research Scientist</h3>
+      <p class="authors">Language as a Biomarker Lab, Emory University</p>
+      <p class="venue">Sep 2026 – present</p>
+    </summary>
+    <ul class="more">
+      <li>Model clinical interviews as time series of sentence embeddings and word-level surprisal, testing whether the long-range temporal structure of speech differs in early psychosis.</li>
+      <li>Built attention-pooling classifiers that combine sentence-level LLM embeddings into one representation per interview, separating clinical high-risk participants from healthy controls.</li>
+      <li>Fine-tune language models on naturalistic dialogue so model-based word predictability matches human judgments.</li>
+    </ul>
+  </details>
+
+  <details class="entry">
+    <summary>
+      <svg class="chev"><use href="#i-chev"/></svg>
+      <h3>Research Software Engineer</h3>
+      <p class="authors">Language as a Biomarker Lab, Emory University</p>
+      <p class="venue">Mar 2025 – Aug 2026</p>
+    </summary>
+    <ul class="more">
+      <li>Led design of the speech and language feature set released to the NIMH Data Archive (Release 4) for the AMP SCZ consortium: 15,000+ interview transcripts across languages.</li>
+      <li>Built speech pipelines (speaker separation, transcription) on a GPU cluster, halving inference time; processed 1,500 hours of interview audio.</li>
+      <li>Bayesian mixed-effects models, decoding models on LLM embeddings, and cross-linguistic theme discovery.</li>
       <li>Mentored three undergraduate research assistants.</li>
     </ul>
-  </article>
+  </details>
 
-  <article class="card">
-    <div class="row"><h3>Directed Research, Emory University</h3><span class="date">2023–24</span></div>
-    <p class="meta">Undergraduate Researcher</p>
-    <ul>
-      <li>Question answering over technical documentation with retrieval-augmented generation, reducing fabricated answers.</li>
+  <details class="entry">
+    <summary>
+      <svg class="chev"><use href="#i-chev"/></svg>
+      <h3>Research Assistant</h3>
+      <p class="authors">Language as a Biomarker Lab, Emory University</p>
+      <p class="venue">May 2024 – Mar 2025</p>
+    </summary>
+    <ul class="more">
+      <li>Measured concreteness of speech with large language models in clinical high-risk and healthy participants; presented at SIRS 2025 and in an honors thesis.</li>
     </ul>
-  </article>
-</section>
+  </details>
 
-<!-- PROJECTS -->
-<section id="projects" class="panel" role="tabpanel">
-  <h2>Projects</h2>
-  <div class="grid">
-    <article class="card project">
-      <div class="row"><h3>Word surprisal and EEG</h3><span class="date">2026</span></div>
-      <p>Language-model surprisal predicted EEG during audiobook listening in 18 of 19 participants, localized to an N400-like response.</p>
-      <p class="tags"><span>EEG</span><span>MNE-Python</span><span>Encoding models</span></p>
-      <a class="more" href="https://github.com/bentdixon/word-surprisal-eeg-experiment">Code on GitHub</a>
-    </article>
-    <article class="card project">
-      <div class="row"><h3>LifeLine: EasyRead public services</h3><span class="date">2026</span></div>
-      <p>A small offline language model that rewrites service descriptions for readers with learning disabilities. 1st place, AdaHack 2026.</p>
-      <p class="tags"><span>LLM fine-tuning</span><span>LoRA</span><span>Accessibility</span></p>
-      <a class="more" href="https://github.com/bentdixon/qwen2.5-1.5b-easy-read-lora">Code on GitHub</a>
-    </article>
-    <article class="card project">
-      <div class="row"><h3>Mammography + chest X-ray fusion</h3><span class="date">2026</span></div>
-      <p>Team lead, HITI Lab Datathon. Fusing two imaging models improved diabetes and kidney disease screening; fairness checked across subgroups.</p>
-      <p class="tags"><span>PyTorch</span><span>Multimodal</span><span>Fairness</span></p>
-      <a class="more" href="https://github.com/bentdixon/hiti-datathon-2026-cxr-mammo">Code on GitHub</a>
-    </article>
-    <article class="card project">
-      <div class="row"><h3>AMP SCZ language release pipeline</h3><span class="date">2025–26</span></div>
-      <p>Open-source feature extraction behind the AMP SCZ speech and language data in the NIMH Data Archive, Release 4 onward.</p>
-      <p class="tags"><span>Python</span><span>NLP</span><span>Open data</span></p>
-      <a class="more" href="https://github.com/bentdixon/ampscz-langsamp-release-pipeline">Code on GitHub</a>
-    </article>
-    <article class="card project">
-      <div class="row"><h3>Transformers from scratch</h3><span class="date">2026</span></div>
-      <p>Readable implementations of core transformer architectures.</p>
-      <p class="tags"><span>PyTorch</span><span>Teaching</span></p>
-      <a class="more" href="https://github.com/bentdixon/transformers-from-scratch">Code on GitHub</a>
-    </article>
-    <article class="card project">
-      <div class="row"><h3>Hodges–Lehmann estimator</h3><span class="date">2026</span></div>
-      <p>A small wrapper for the pseudomedian with a bootstrap confidence interval.</p>
-      <p class="tags"><span>Statistics</span><span>Python</span></p>
-      <a class="more" href="https://github.com/bentdixon/pseudomedian-hodges-lehmann-estimator">Code on GitHub</a>
-    </article>
-  </div>
-</section>
+  <details class="entry">
+    <summary>
+      <svg class="chev"><use href="#i-chev"/></svg>
+      <h3>Undergraduate Researcher</h3>
+      <p class="authors">Directed Research, Emory University</p>
+      <p class="venue">Sep 2023 – May 2024</p>
+    </summary>
+    <ul class="more">
+      <li>Question answering over technical documentation with retrieval-augmented generation and a fine-tuned Flan-T5 model, reducing fabricated answers.</li>
+    </ul>
+  </details>
 
-<!-- EDUCATION -->
-<section id="education" class="panel" role="tabpanel">
   <h2>Education</h2>
-  <article class="card">
-    <div class="row"><h3>University of Edinburgh</h3><span class="date">2026–27</span></div>
-    <p class="meta">MSc Cognitive Science</p>
+  <article class="entry">
+    <h3>MSc Cognitive Science</h3>
+    <p class="authors">University of Edinburgh</p>
+    <p class="venue">2026 – 2027</p>
   </article>
-  <article class="card">
-    <div class="row"><h3>Emory University</h3><span class="date">2021–25</span></div>
-    <p class="meta">BA Computer Science; BA Psychology &amp; Linguistics · Highest Honors</p>
-    <p>Thesis: <i>Automated Assessment of Concrete Language in Clinical High-Risk for Psychosis: A Novel Large Language Model Approach</i></p>
+  <article class="entry">
+    <h3>BA Computer Science; BA Psychology &amp; Linguistics</h3>
+    <p class="authors">Emory University · Highest Honors</p>
+    <p class="venue">2021 – 2025</p>
+    <p class="note">Thesis: <i>Automated Assessment of Concrete Language in Clinical High-Risk for Psychosis: A Novel Large Language Model Approach</i></p>
   </article>
 
-  <h3 class="group">Honours and awards</h3>
-  <ul class="list card">
-    <li><span>1st Place, UN Sustainable Development Goals Challenge, AdaHack, University of Edinburgh</span><span class="date">2026</span></li>
-    <li><span>Highest Honors, Emory College of Arts and Sciences</span><span class="date">2025</span></li>
-    <li><span>Highest Excellence in Psychology &amp; Linguistics, Emory University</span><span class="date">2025</span></li>
-    <li><span>Psi Chi International Honor Society in Psychology</span><span class="date">2024</span></li>
+  <h2>Teaching &amp; Service</h2>
+  <ul class="plain dated">
+    <li><span>Research mentor, three undergraduate research assistants, Emory University</span><span>2025 – 2026</span></li>
+    <li><span>Tutor, data structures and algorithms, Emory University</span><span>2023 – 2024</span></li>
+    <li><span>Instructor, Python and robotics for schoolchildren, Tech Academy</span><span>2022</span></li>
+    <li><span>Computer Vision team, HumanEd, University of Edinburgh</span><span>2026 – present</span></li>
+    <li><span>Common Ground Leadership Programme, inaugural cohort, University of Edinburgh</span><span>2026 – 2027</span></li>
+    <li><span>President, Emory Autism Advocacy Organization</span><span>2023 – 2025</span></li>
+    <li><span>Co-lead, campus sensory-friendly spaces initiative, Emory University</span><span>2023 – 2025</span></li>
+  </ul>
+
+  <h2>Honors &amp; Awards</h2>
+  <ul class="plain dated">
+    <li><span>1st Place, UN Sustainable Development Goals Challenge, AdaHack, University of Edinburgh</span><span>2026</span></li>
+    <li><span>Highest Honors, Emory College of Arts and Sciences</span><span>2025</span></li>
+    <li><span>Highest Excellence in Psychology &amp; Linguistics, Emory University</span><span>2025</span></li>
+    <li><span>Psi Chi International Honor Society in Psychology</span><span>2024</span></li>
   </ul>
 </section>
 
-<!-- TEACHING & SERVICE -->
-<section id="service" class="panel" role="tabpanel">
-  <h2>Teaching &amp; service</h2>
-  <h3 class="group">Teaching and mentoring</h3>
-  <ul class="list card">
-    <li><span>Research mentor, three undergraduate research assistants, Emory University</span><span class="date">2025–26</span></li>
-    <li><span>Tutor, data structures and algorithms, Emory University</span><span class="date">2023–24</span></li>
-    <li><span>Instructor, Python and robotics for schoolchildren, Tech Academy</span><span class="date">2022</span></li>
-  </ul>
-  <h3 class="group">Activities and service</h3>
-  <ul class="list card">
-    <li><span>Computer Vision team, HumanEd, University of Edinburgh</span><span class="date">2026–</span></li>
-    <li><span>Common Ground Leadership Programme, inaugural cohort, Edinburgh</span><span class="date">2026–27</span></li>
-    <li><span>President, Emory Autism Advocacy Organization</span><span class="date">2023–25</span></li>
-    <li><span>Chair, Autism Celebration Month, including a research symposium</span><span class="date">2023–25</span></li>
-    <li><span>Co-lead, campus sensory-friendly spaces initiative, Emory</span><span class="date">2023–25</span></li>
-  </ul>
+<!-- ========== PROJECTS ========== -->
+<section id="projects" class="panel">
+  <h2 class="first">Projects</h2>
+
+  <details class="entry">
+    <summary>
+      <svg class="chev"><use href="#i-chev"/></svg>
+      <h3>Word Surprisal and EEG Encoding Models</h3>
+      <p class="authors">Independent project</p>
+      <p class="venue">2026</p>
+    </summary>
+    <ul class="more">
+      <li>Tested whether language-model surprisal predicts EEG from 19 people listening to an audiobook, using ridge encoding models (temporal response functions).</li>
+      <li>Surprisal improved prediction in 18 of 19 participants (p &lt; 0.001) beyond acoustic, timing and frequency controls, localized to a centro-parietal response at about 400 ms (N400).</li>
+    </ul>
+    <p class="links"><a href="https://github.com/bentdixon/word-surprisal-eeg-experiment"><svg><use href="#i-code"/></svg>Code</a></p>
+  </details>
+
+  <details class="entry">
+    <summary>
+      <svg class="chev"><use href="#i-chev"/></svg>
+      <h3>LifeLine: Plain-Language Guide to Edinburgh Public Services</h3>
+      <p class="authors">Team of 3 · 1st Place, UN SDG Challenge, AdaHack</p>
+      <p class="venue">2026</p>
+    </summary>
+    <ul class="more">
+      <li>Fine-tuned a 1.5B-parameter language model (Qwen2.5, LoRA) to rewrite service descriptions in EasyRead for readers with learning disabilities, running offline on a laptop.</li>
+    </ul>
+    <p class="links"><a href="https://github.com/bentdixon/qwen2.5-1.5b-easy-read-lora"><svg><use href="#i-code"/></svg>Code</a></p>
+  </details>
+
+  <details class="entry">
+    <summary>
+      <svg class="chev"><use href="#i-chev"/></svg>
+      <h3>Mammography + Chest X-Ray Embedding Fusion</h3>
+      <p class="authors">Team lead · HITI Lab Datathon</p>
+      <p class="venue">2026</p>
+    </summary>
+    <ul class="more">
+      <li>Tested whether combining two imaging models' embeddings predicts 4 chronic diseases better than either alone; fusion improved diabetes and kidney disease screening.</li>
+      <li>Compared penalized logistic regression and early-, late- and gated-fusion networks under nested cross-validation, with fairness checks across age, race and BMI.</li>
+    </ul>
+    <p class="links"><a href="https://github.com/bentdixon/hiti-datathon-2026-cxr-mammo"><svg><use href="#i-code"/></svg>Code</a></p>
+  </details>
+
+  <details class="entry">
+    <summary>
+      <svg class="chev"><use href="#i-chev"/></svg>
+      <h3>AMP SCZ Language Release Pipeline</h3>
+      <p class="authors">Language as a Biomarker Lab</p>
+      <p class="venue">2025 – 2026</p>
+    </summary>
+    <ul class="more">
+      <li>Open-source feature extraction behind the AMP SCZ speech and language data in the NIMH Data Archive, Release 4 onward.</li>
+    </ul>
+    <p class="links"><a href="https://github.com/bentdixon/ampscz-langsamp-release-pipeline"><svg><use href="#i-code"/></svg>Code</a></p>
+  </details>
+
+  <details class="entry">
+    <summary>
+      <svg class="chev"><use href="#i-chev"/></svg>
+      <h3>Transformers from Scratch</h3>
+      <p class="authors">Independent project</p>
+      <p class="venue">2026</p>
+    </summary>
+    <ul class="more">
+      <li>Readable implementations of core transformer architectures.</li>
+    </ul>
+    <p class="links"><a href="https://github.com/bentdixon/transformers-from-scratch"><svg><use href="#i-code"/></svg>Code</a></p>
+  </details>
+
+  <details class="entry">
+    <summary>
+      <svg class="chev"><use href="#i-chev"/></svg>
+      <h3>Hodges–Lehmann Estimator</h3>
+      <p class="authors">Independent project</p>
+      <p class="venue">2026</p>
+    </summary>
+    <ul class="more">
+      <li>A small wrapper that computes the pseudomedian and a bootstrap confidence interval for it.</li>
+    </ul>
+    <p class="links"><a href="https://github.com/bentdixon/pseudomedian-hodges-lehmann-estimator"><svg><use href="#i-code"/></svg>Code</a></p>
+  </details>
 </section>
 
 </main>
 
-<footer class="wrap">
-  <p>Last updated November 2026 · <a href="cv.pdf">Full CV (PDF)</a></p>
-</footer>
+<footer>© 2026 Benjamin Dixon</footer>
 
 <script src="tabs.js"></script>
 <script src="picker.js"></script>

@@ -1,25 +1,27 @@
 // Preview-only colour and font picker. Remove this file (and its <script> tag) before going live.
 (function () {
   var palettes = {
-    'Navy':      { bg: '#f7f6f2', card: '#ffffff', text: '#1c1c1c', muted: '#666660', accent: '#1f4e79', soft: '#e6eef6', border: '#e2e0da' },
-    'Forest':    { bg: '#f4f6f2', card: '#ffffff', text: '#1b201b', muted: '#5f665f', accent: '#2f6b45', soft: '#e3efe6', border: '#dde3dc' },
-    'Burgundy':  { bg: '#f8f5f3', card: '#ffffff', text: '#1f1a1a', muted: '#6b6060', accent: '#8a2c3b', soft: '#f5e6e8', border: '#e6dedb' },
-    'Slate':     { bg: '#f3f4f6', card: '#ffffff', text: '#16181d', muted: '#5c6370', accent: '#3b4a6b', soft: '#e5e8f0', border: '#dfe2e8' },
-    'Teal':      { bg: '#f2f6f6', card: '#ffffff', text: '#162021', muted: '#5a6869', accent: '#0f6e74', soft: '#e0f0f0', border: '#d9e4e4' },
-    'Dark':      { bg: '#141518', card: '#1d1f23', text: '#e9e9e6', muted: '#9a9ca3', accent: '#8fb4ff', soft: '#26324a', border: '#2c2f36' }
+    'Plum':     { bg: '#ffffff', card: '#f2f2f2', text: '#2b2b2b', muted: '#6e6e6e', accent: '#3a1e3f', soft: '#f2f2f2', border: '#dcdcdc' },
+    'Navy':     { bg: '#ffffff', card: '#f1f3f6', text: '#262a30', muted: '#6a707a', accent: '#1f3a68', soft: '#f1f3f6', border: '#d9dde3' },
+    'Forest':   { bg: '#ffffff', card: '#f1f4f1', text: '#262b27', muted: '#6a716b', accent: '#2f5d3f', soft: '#f1f4f1', border: '#d8ded9' },
+    'Burgundy': { bg: '#ffffff', card: '#f5f1f1', text: '#2d2626', muted: '#736a6a', accent: '#7a2433', soft: '#f5f1f1', border: '#e0d8d8' },
+    'Charcoal': { bg: '#ffffff', card: '#f2f2f2', text: '#222222', muted: '#6b6b6b', accent: '#222222', soft: '#f2f2f2', border: '#d6d6d6' },
+    'Warm paper': { bg: '#fbf9f4', card: '#f0ece2', text: '#2b2924', muted: '#716c61', accent: '#5b4636', soft: '#f0ece2', border: '#ddd6c8' },
+    'Dark':     { bg: '#16171a', card: '#24262b', text: '#e6e6e3', muted: '#9a9ca3', accent: '#c9a7d6', soft: '#24262b', border: '#33363d' }
   };
   var fonts = {
-    'Source Serif + Inter':    { body: '"Source Serif 4", Georgia, serif', ui: '"Inter", system-ui, sans-serif', q: 'Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600' },
-    'EB Garamond + Inter':     { body: '"EB Garamond", Georgia, serif', ui: '"Inter", system-ui, sans-serif', q: 'EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600' },
-    'Newsreader + IBM Plex Sans': { body: '"Newsreader", Georgia, serif', ui: '"IBM Plex Sans", system-ui, sans-serif', q: 'Newsreader:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;600' },
-    'Inter only (sans)':       { body: '"Inter", system-ui, sans-serif', ui: '"Inter", system-ui, sans-serif', q: 'Inter:ital,wght@0,400;0,600;1,400' },
-    'IBM Plex Sans + Mono':    { body: '"IBM Plex Sans", system-ui, sans-serif', ui: '"IBM Plex Mono", monospace', q: 'IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;600' },
-    'System (no downloads)':   { body: 'Charter, Georgia, serif', ui: 'system-ui, -apple-system, "Segoe UI", sans-serif', q: '' }
+    'Source Serif':      { body: '"Source Serif 4", Georgia, serif', ui: '"Source Serif 4", Georgia, serif', q: 'Source+Serif+4:ital,opsz,wght@0,8..60,300..600;1,8..60,400' },
+    'EB Garamond':       { body: '"EB Garamond", Georgia, serif', ui: '"EB Garamond", Georgia, serif', q: 'EB+Garamond:ital,wght@0,400..600;1,400' },
+    'Newsreader':        { body: '"Newsreader", Georgia, serif', ui: '"Newsreader", Georgia, serif', q: 'Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,400' },
+    'Crimson Pro':       { body: '"Crimson Pro", Georgia, serif', ui: '"Crimson Pro", Georgia, serif', q: 'Crimson+Pro:ital,wght@0,300..600;1,400' },
+    'Inter (sans)':      { body: '"Inter", system-ui, sans-serif', ui: '"Inter", system-ui, sans-serif', q: 'Inter:ital,wght@0,300..600;1,400' },
+    'IBM Plex Sans':     { body: '"IBM Plex Sans", system-ui, sans-serif', ui: '"IBM Plex Sans", system-ui, sans-serif', q: 'IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;1,400' },
+    'System (no downloads)': { body: 'Charter, Georgia, serif', ui: 'Charter, Georgia, serif', q: '' }
   };
 
   var root = document.documentElement.style;
   var link = document.getElementById('font-link');
-  var state = { palette: 'Navy', font: 'Source Serif + Inter' };
+  var state = { palette: 'Plum', font: 'Source Serif' };
 
   function apply() {
     var p = palettes[state.palette], f = fonts[state.font];
