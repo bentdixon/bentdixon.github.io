@@ -21,7 +21,7 @@
 
   var root = document.documentElement.style;
   var link = document.getElementById('font-link');
-  var state = { palette: 'Plum', font: 'Source Serif Pro' };
+  var state = { palette: 'Burgundy', font: 'Crimson Pro' };
 
   function apply() {
     var p = palettes[state.palette], f = fonts[state.font];

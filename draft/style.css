@@ -1,24 +1,24 @@
 /* All colours and fonts live here. Change these to restyle the site. */
 :root {
   --bg: #ffffff;
-  --text: #2b2b2b;
-  --muted: #6e6e6e;
-  --accent: #3a1e3f;       /* top bar, open entries, link hover */
-  --border: #dcdcdc;       /* left bar on entries */
-  --card: #f2f2f2;         /* photo placeholder */
-  --accent-soft: #f2f2f2;
-  --font-body: "Source Serif Pro", serif;
-  --font-ui: "Source Serif Pro", serif;
+  --text: #2d2626;
+  --muted: #736a6a;
+  --accent: #7a2433;       /* burgundy: top bar, open entries, badges, link hover */
+  --border: #e0d8d8;       /* left bar on entries, row lines */
+  --card: #f5f1f1;         /* photo placeholder */
+  --accent-soft: #f5f1f1;
+  --font-body: "Crimson Pro", Georgia, serif;
+  --font-ui: "Crimson Pro", Georgia, serif;
 }
 
 * { box-sizing: border-box; }
-html { font-size: 16px; }
+html { font-size: 18px; }
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
 }
 b, strong { font-weight: 600; }
