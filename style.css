@@ -91,6 +91,15 @@ ul.plain b { font-weight: 400; }
 ul.dated li { display: flex; justify-content: space-between; gap: 1.5rem; }
 ul.dated li span:last-child { color: var(--muted); white-space: nowrap; font-size: 0.88rem; }
 
+/* Two-column lists: what on the left, date and place on the right */
+ul.timeline { list-style: none; margin: 0; padding: 0; }
+ul.timeline li { display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; padding: 0.6rem 0; border-bottom: 1px solid var(--border); }
+ul.timeline li:last-child { border-bottom: 0; }
+.what, .when { display: flex; flex-direction: column; }
+.what .role { font-weight: 400; }
+.what .org, .when span + span { font-size: 0.86rem; color: var(--muted); }
+.when { text-align: right; white-space: nowrap; font-size: 0.92rem; font-variant-numeric: tabular-nums; }
+
 footer { text-align: center; font-size: 0.75rem; color: var(--muted); padding: 1rem 0 2.5rem; }
 
 /* Phones */
@@ -103,6 +112,8 @@ footer { text-align: center; font-size: 0.75rem; color: var(--muted); padding: 1
   .bio p { text-align: left; }
   .icon-links { gap: 1.6rem; }
   ul.dated li { flex-direction: column; gap: 0; }
+  ul.timeline li { grid-template-columns: 1fr; gap: 0.2rem; }
+  .when { text-align: left; flex-direction: row; gap: 0.6rem; }
 }
 
 @media print {
